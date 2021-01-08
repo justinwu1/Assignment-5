@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href =  "main.css">
+    <link rel="stylesheet" href="main.css">
     <title>Grid</title>
 </head>
+
 <body>
-    <h1>Hello</h1>
-    <script src = "script.js"></script>
+    <div class = "buttons">
+        <div id="column">
+            <button class = "button column-btn">Add Column</button>
+            <button class = "button column-btn">Remove Column</button>
+        </div>
+        <div id="all">
+            <button class = "button fill-btn">Fill All</button>
+            <button class = "button fill-btn">Fill All Uncolored</button>
+            <button class = "button fill-btn">Clear All</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn button">Dropdown</button>
+            <div class="dropdown-content">
+            <a href="#">Red</a>
+            <a href="#">Blue</a>
+            <a href="#">Green</a>
+            </div>
+          </div>
+        <div id="row">
+            <button class = "button row-btn">Add Row</button>
+            <button class = "button row-btn">Remove Row</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
