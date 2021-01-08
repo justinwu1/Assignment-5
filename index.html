@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Grid</title>
-</head>
-
-<body>
-    <div class="buttons">
-        <div id="column">
-            <button class="button column-btn" id="add-column">Add Column</button>
-            <button class="button column-btn" id="remove-column">Remove Column</button>
-        </div>
-        <div id="all">
-            <button class="button fill-btn">Fill All</button>
-            <button class="button fill-btn">Fill All Uncolored</button>
-            <button class="button fill-btn">Clear All</button>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <title>Assignment 5 DOM</title>
+    </head>
+    <body>
         <div class="dropdown">
-            <button class="dropbtn button">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Red</a>
-                <a href="#">Blue</a>
-                <a href="#">Green</a>
+        <!--Creates drop-down list of colors-->
+        <select name="colors" id="color" onchange="selectColor(this.value)">
+            <option value="">--Select A Color--</option>
+            <option class="black" id="black" value="black">Black</option>
+            <option class="red" id="red" value="red">Red</option>
+            <option class="deepPink" id="deepPink" value="deepPink">Deep Pink</option>
+            <option class="pink" id="pink" value="pink">Pink</option>
+            <option class="purple" id="purple" value="purple">Purple</option>
+            <option class="blue" id="blue" value="blue">Blue</option>
+            <option class="lightBlue" id="lightBlue" value="lightBlue">Light Blue</option>
+            <option class="green" id="green" value="green">Green</option>
+            <option class="lightGreen" id="lightGreen" value="lightGreen">Light Green</option>
+            <option class="orange" id="orange" value="orange">Orange</option>
+            <option class="yellow" id="yellow" value="yellow">Yellow</option> 
+        </select>
+        </div>
+        
+        
+        <div class="buttons">
+            <div id="columns">
+                <!--Creates add column button-->
+                <div id="addColumnButton" onClick="addColumn()"><button>Add Column</button></div>
+                <!--Creates remove column button-->
+                <div id="removeColumnButton" onClick="removeColumn()"><button>Remove Column</button></div>
             </div>
         </div>
-        <div id="row">
-            <button class="button row-btn" id="add-row">Add Row</button>
-            <button class="button row-btn" id ="remove-row">Remove Row</button>
-        </div>
+        <div class="rows">
+            <!--Creates add row button-->
+            <div id="addRowButton" onClick="addRow()"><button>Add Row</button></div>
+            <!--Creates remove row button-->
+            <div id="removeRowButton" onClick="removeRow()"><button>Remove Row</button></div>
+       </div>
+       <div class="fill">
+            <!--Creates button to fill all uncolored cells-->
+            <div id="fillAllUncoloredCellsButton" onClick="fillAllUncoloredCells()"><button>Fill All Uncolored Cells</button></div>       
+            <!--Creates button to fill all cells-->
+            <div id="fillAllCellsButton" onClick="fillAllCells()"><button>Fill All Cells</button></div>
+            <!--Creates button that clears all cells from color-->
+            <div id="clearAllCellsButton" onClick="clearAllCells()"><button>Clear All Cells</button></div>      
+       </div>
     </div>
-    <table>
-        <tbody>
-            <tr>
-                <th class="cube"></th>
-            </tr>
-            <tr>
-                <th class="cube"></th>
-            </tr>
-            <tr>
-                <th class="cube"></th>
-            </tr>
-        </tbody>
-    </table>
+    <table id="table"></table>
     <script src="script.js"></script>
-</body>
-
+    </body>
 </html>
