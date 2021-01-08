@@ -34,12 +34,15 @@ body{
 }
 .column-btn{
     background-color: #ff7979;
+    color:white;
 }
 .fill-btn{
     background-color: #f78fb3;
+    color:white;
 }
 .row-btn{
     background-color: #f8a5c2;
+    color:white;
 }
 .button:hover{
     color:#000000;
@@ -47,7 +50,7 @@ body{
 }
 .dropbtn {
     background-color:  #ff7979;
-    color: black;
+    color:white;
     padding: 0.35em 1.2em;
     font-size: 1.5rem;
     border: none;
