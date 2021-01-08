@@ -33,20 +33,20 @@ body{
     font-size:1.5rem;
 }
 .column-btn{
-    background-color: #ffbe76;
+    background-color: #ff7979;
 }
 .fill-btn{
-    background-color: #f9ca24;
+    background-color: #f78fb3;
 }
 .row-btn{
-    background-color: #dff9fb;
+    background-color: #f8a5c2;
 }
 .button:hover{
     color:#000000;
     background-color:#FFFFFF;
 }
 .dropbtn {
-    background-color: #badc58;
+    background-color:  #ff7979;
     color: black;
     padding: 0.35em 1.2em;
     font-size: 1.5rem;
