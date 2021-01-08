@@ -87,3 +87,14 @@ body{
   .dropdown:hover .dropbtn {
     background-color: #FFFFFF;
   }
+table{
+    margin-left:150px;
+    margin-top:100px;
+}
+.cube{
+    
+    width:100px;
+    height:100px;
+    background-color: #f8a5c2;
+    border:1px solid white;
+}
