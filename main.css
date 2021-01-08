@@ -33,21 +33,24 @@ body{
     font-size:1.5rem;
 }
 .column-btn{
-    background-color: #ffbe76;
+    background-color: #ff7979;
+    color:white;
 }
 .fill-btn{
-    background-color: #f9ca24;
+    background-color: #f78fb3;
+    color:white;
 }
 .row-btn{
-    background-color: #dff9fb;
+    background-color: #f8a5c2;
+    color:white;
 }
 .button:hover{
     color:#000000;
     background-color:#FFFFFF;
 }
 .dropbtn {
-    background-color: #badc58;
-    color: black;
+    background-color:  #ff7979;
+    color:white;
     padding: 0.35em 1.2em;
     font-size: 1.5rem;
     border: none;
@@ -84,3 +87,14 @@ body{
   .dropdown:hover .dropbtn {
     background-color: #FFFFFF;
   }
+table{
+    margin-left:150px;
+    margin-top:100px;
+}
+.cube{
+    
+    width:100px;
+    height:100px;
+    background-color: #f8a5c2;
+    border:1px solid white;
+}
